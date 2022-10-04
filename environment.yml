@@ -1,4 +1,4 @@
-name: arm-cookbook-dev
+name: tracer-radar-dev
 channels:
   - conda-forge
   - defaults
