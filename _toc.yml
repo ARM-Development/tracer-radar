@@ -1,6 +1,6 @@
 format: jb-book
 root: README
 parts:
-- caption: Notebooks
+- caption: Example Workflows
   chapters:
     - glob: notebooks/*
