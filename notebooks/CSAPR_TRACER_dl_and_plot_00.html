@@ -116,7 +116,7 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Notebooks
+  Example Workflows
  </span>
 </p>
 <ul class="current nav bd-sidenav">
@@ -413,7 +413,7 @@ title="Print to PDF"
               <div>
                 
   <h1>Table of Contents<span class="tocSkip"></span></h1>
-<div class="toc"><ul class="toc-item"><li><span><a href="#Random-preamble-stuff" data-toc-modified-id="Random-preamble-stuff-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>Random preamble stuff</a></span></li><li><span><a href="#C-SAPR-data-download" data-toc-modified-id="C-SAPR-data-download-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>C-SAPR data download</a></span></li><li><span><a href="#Process-C-SAPR-data-(phase)" data-toc-modified-id="Process-C-SAPR-data-(phase)-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>Process C-SAPR data (phase)</a></span></li><li><span><a href="#Plot-figures,-including-NEXRAD-thing" data-toc-modified-id="Plot-figures,-including-NEXRAD-thing-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>Plot figures, including NEXRAD thing</a></span><ul class="toc-item"><li><span><a href="#Do-main-plots-(run-this-after-4.2)" data-toc-modified-id="Do-main-plots-(run-this-after-4.2)-4.1"><span class="toc-item-num">4.1&nbsp;&nbsp;</span>Do main plots (run this after 4.2)</a></span></li><li><span><a href="#Download-NEXRAD-(run-this-before-4.1)" data-toc-modified-id="Download-NEXRAD-(run-this-before-4.1)-4.2"><span class="toc-item-num">4.2&nbsp;&nbsp;</span>Download NEXRAD (run this before 4.1)</a></span></li></ul></li><li><span><a href="#Load-lightning-to-plot-with-RHIs-(incomplete)" data-toc-modified-id="Load-lightning-to-plot-with-RHIs-(incomplete)-5"><span class="toc-item-num">5&nbsp;&nbsp;</span>Load lightning to plot with RHIs (incomplete)</a></span></li></ul></div><div class="cell docutils container">
+<div class="toc"><ul class="toc-item"><li><span><a href="#Random-preamble-stuff" data-toc-modified-id="Random-preamble-stuff-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>CSAPR, Lightning Comparison</a></span></li><li><span><a href="#C-SAPR-data-download" data-toc-modified-id="C-SAPR-data-download-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>C-SAPR data download</a></span></li><li><span><a href="#Process-C-SAPR-data-(phase)" data-toc-modified-id="Process-C-SAPR-data-(phase)-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>Process C-SAPR data (phase)</a></span></li><li><span><a href="#Plot-figures,-including-NEXRAD-thing" data-toc-modified-id="Plot-figures,-including-NEXRAD-thing-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>Plot figures, including NEXRAD thing</a></span><ul class="toc-item"><li><span><a href="#Do-main-plots-(run-this-after-4.2)" data-toc-modified-id="Do-main-plots-(run-this-after-4.2)-4.1"><span class="toc-item-num">4.1&nbsp;&nbsp;</span>Do main plots (run this after 4.2)</a></span></li><li><span><a href="#Download-NEXRAD-(run-this-before-4.1)" data-toc-modified-id="Download-NEXRAD-(run-this-before-4.1)-4.2"><span class="toc-item-num">4.2&nbsp;&nbsp;</span>Download NEXRAD (run this before 4.1)</a></span></li></ul></li><li><span><a href="#Load-lightning-to-plot-with-RHIs-(incomplete)" data-toc-modified-id="Load-lightning-to-plot-with-RHIs-(incomplete)-5"><span class="toc-item-num">5&nbsp;&nbsp;</span>Load lightning to plot with RHIs (incomplete)</a></span></li></ul></div><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">glob</span>
 <span class="kn">import</span> <span class="nn">os</span>
@@ -503,8 +503,8 @@ title="Print to PDF"
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">username</span> <span class="o">=</span> <span class="s2">&quot;mvanlierwalq&quot;</span>
-<span class="n">token</span>   <span class="o">=</span> <span class="s2">&quot;5b70d23c96777b14&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">arm_username</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;ARM_USERNAME&quot;</span><span class="p">)</span>
+<span class="n">arm_password</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;ARM_PASSWORD&quot;</span><span class="p">)</span>
 
 <span class="n">datastream</span> <span class="o">=</span> <span class="s2">&quot;houcsapr2cfrS2.a1&quot;</span>
 
